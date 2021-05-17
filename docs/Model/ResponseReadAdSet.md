@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Criteo\Marketing\Model\ReadModelReadAdSet[]**](ReadModelReadAdSet.md) |  | [optional] 
+**data** | [**\Criteo\Marketing\Model\ReadModelReadAdSet**](ReadModelReadAdSet.md) |  | [optional] 
 **warnings** | [**\Criteo\Marketing\Model\ProblemDetails[]**](ProblemDetails.md) |  | [optional] 
 **errors** | [**\Criteo\Marketing\Model\ProblemDetails[]**](ProblemDetails.md) |  | [optional] 
 

@@ -58,7 +58,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\Criteo\Marketing\Model\ReadModelReadAdSet[]',
+        'data' => '\Criteo\Marketing\Model\ReadModelReadAdSet',
         'warnings' => '\Criteo\Marketing\Model\ProblemDetails[]',
         'errors' => '\Criteo\Marketing\Model\ProblemDetails[]'
     ];
@@ -220,7 +220,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Criteo\Marketing\Model\ReadModelReadAdSet[]|null
+     * @return \Criteo\Marketing\Model\ReadModelReadAdSet|null
      */
     public function getData()
     {
@@ -230,7 +230,7 @@ class ResponseReadAdSet implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Criteo\Marketing\Model\ReadModelReadAdSet[]|null $data data
+     * @param \Criteo\Marketing\Model\ReadModelReadAdSet|null $data data
      *
      * @return $this
      */
