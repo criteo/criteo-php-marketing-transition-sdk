@@ -337,7 +337,7 @@ Name | Type | Description  | Notes
 
 ## searchAdSets
 
-> \Criteo\Marketing\Model\ResponseReadAdSet searchAdSets($request_ad_set_search)
+> \Criteo\Marketing\Model\ResponsesReadAdSet searchAdSets($request_ad_set_search)
 
 
 
@@ -380,7 +380,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Criteo\Marketing\Model\ResponseReadAdSet**](../Model/ResponseReadAdSet.md)
+[**\Criteo\Marketing\Model\ResponsesReadAdSet**](../Model/ResponsesReadAdSet.md)
 
 ### Authorization
 

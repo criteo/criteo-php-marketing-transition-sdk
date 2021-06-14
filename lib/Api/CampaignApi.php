@@ -1546,7 +1546,7 @@ class CampaignApi
      *
      * @throws \Criteo\Marketing\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Criteo\Marketing\Model\ResponseReadAdSet
+     * @return \Criteo\Marketing\Model\ResponsesReadAdSet
      */
     public function searchAdSets($request_ad_set_search = null)
     {
@@ -1561,7 +1561,7 @@ class CampaignApi
      *
      * @throws \Criteo\Marketing\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Criteo\Marketing\Model\ResponseReadAdSet, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Criteo\Marketing\Model\ResponsesReadAdSet, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchAdSetsWithHttpInfo($request_ad_set_search = null)
     {
@@ -1598,20 +1598,20 @@ class CampaignApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\Criteo\Marketing\Model\ResponseReadAdSet' === '\SplFileObject') {
+                    if ('\Criteo\Marketing\Model\ResponsesReadAdSet' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = $responseBody->getContents();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Criteo\Marketing\Model\ResponseReadAdSet', []),
+                        ObjectSerializer::deserialize($content, '\Criteo\Marketing\Model\ResponsesReadAdSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Criteo\Marketing\Model\ResponseReadAdSet';
+            $returnType = '\Criteo\Marketing\Model\ResponsesReadAdSet';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1630,7 +1630,7 @@ class CampaignApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Criteo\Marketing\Model\ResponseReadAdSet',
+                        '\Criteo\Marketing\Model\ResponsesReadAdSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1672,7 +1672,7 @@ class CampaignApi
      */
     public function searchAdSetsAsyncWithHttpInfo($request_ad_set_search = null)
     {
-        $returnType = '\Criteo\Marketing\Model\ResponseReadAdSet';
+        $returnType = '\Criteo\Marketing\Model\ResponsesReadAdSet';
         $request = $this->searchAdSetsRequest($request_ad_set_search);
 
         return $this->client
