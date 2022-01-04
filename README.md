@@ -1,9 +1,9 @@
+# Criteo Marketing Transition SDK for PHP
+
 # This project is deprecated
 We've built a new set of SDKs to help you use our [Criteo's API](https://developers.criteo.com/).
 
 You can find the new PHP SDKs repositories here : https://github.com/criteo/criteo-api-marketingsolutions-php-sdk and https://github.com/criteo/criteo-api-retailmedia-php-sdk
-
-# Criteo Marketing Transition SDK for PHP
 
 ## Introduction
 API Client Libraries can facilitate your use of the Criteo API allowing you to build unique and customized solutions to serve your businesses and clients.
